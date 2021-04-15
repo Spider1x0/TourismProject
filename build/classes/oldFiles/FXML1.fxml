@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="currentPage" prefHeight="720.0" prefWidth="1600.0" styleClass="Background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testproject.HomeController">
+   <left>
+      <VBox prefHeight="648.0" prefWidth="240.0" styleClass="NavBar" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="135.0" prefWidth="235.0">
+               <children>
+                  <ImageView fitHeight="118.0" fitWidth="132.0" layoutX="63.0" layoutY="14.0" onMouseClicked="#toProfile" pickOnBounds="true" preserveRatio="true" styleClass="ProfilePic">
+                     <image>
+                        <Image url="@../images/image-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <GridPane prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="testLbl" alignment="CENTER" contentDisplay="BOTTOM" text="HOME" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="HOME" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="HOME" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="homeBtn" contentDisplay="CENTER" onAction="#toHome" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="CITY" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="CITIES" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="citiesBtn" onAction="#toCities" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="73.0" prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="DISCOVER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <OctIconView fill="#e85d04" glyphName="TELESCOPE" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="SIGHTSEEING" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="sightseeingBtn" onAction="#toSightseeing" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="THEATER" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ENTERTAINMENT" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="entertainment" onAction="#toEntertainment" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <GridPane layoutX="10.0" layoutY="275.0" prefHeight="73.0" prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ADMIN" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <OctIconView fill="#e85d04" glyphName="ALERT" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ADMIN PAGE 1" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="adminBtn1" onAction="#toAdmin1" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="MAP_MARKER_PLUS" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ADMIN PAGE 2" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="adminBtn2" onAction="#toAdmin2" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="75.0" prefWidth="235.0">
+               <children>
+                  <JFXButton fx:id="logOffBtn" layoutX="19.0" layoutY="18.0" onAction="#toLogin" prefHeight="50.0" prefWidth="201.0" ripplerFill="#f48c06" styleClass="LogOutButton" text="LOG OUT" textAlignment="CENTER" textFill="#fff8d6">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" stylesheets="@../css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="49.0" prefWidth="1360.0" styleClass="Header" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="648.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="680.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Rahal" textAlignment="CENTER" textFill="#f48c06">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Admin-Update City" textAlignment="CENTER" textFill="#f48c06" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentTime" textAlignment="CENTER" textFill="#f48c06" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <Pane layoutX="580.0" layoutY="310.0" prefHeight="200.0" prefWidth="200.0" styleClass="ContentContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="21.0" prefHeight="542.0" prefWidth="391.0" styleClass="Update_Page">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Recommendations" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="97.0" prefHeight="19.0" prefWidth="163.0" text="Element 1" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="28.0" layoutY="131.0" prefHeight="26.0" prefWidth="209.0" />
+                        <TextField layoutX="26.0" layoutY="214.0" prefHeight="26.0" prefWidth="212.0" />
+                        <Label layoutX="27.0" layoutY="183.0" prefHeight="19.0" prefWidth="163.0" text="Element 2" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="27.0" layoutY="310.0" prefHeight="26.0" prefWidth="212.0" />
+                        <Label layoutX="27.0" layoutY="271.0" prefHeight="19.0" prefWidth="163.0" text="Element 2" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="26.0" layoutY="406.0" prefHeight="26.0" prefWidth="212.0" />
+                        <Label layoutX="27.0" layoutY="380.0" prefHeight="19.0" prefWidth="163.0" text="Element 2" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="144.0" layoutY="490.0" prefHeight="26.0" prefWidth="91.0" styleClass="LogOutButton" text="Save" textFill="WHITE" />
+                        <JFXButton layoutX="272.0" layoutY="131.0" prefHeight="26.0" prefWidth="102.0" styleClass="LogOutButton" text="Change Image" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="272.0" layoutY="218.0" prefHeight="26.0" prefWidth="102.0" styleClass="LogOutButton" text="Change Image" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="272.0" layoutY="310.0" prefHeight="26.0" prefWidth="102.0" styleClass="LogOutButton" text="Change Image" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="272.0" layoutY="406.0" prefHeight="26.0" prefWidth="102.0" styleClass="LogOutButton" text="Change Image" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="420.0" layoutY="21.0" prefHeight="563.0" prefWidth="435.0" styleClass="Update_Page">
+                     <children>
+                        <Label layoutX="47.0" layoutY="14.0" text="Current Events" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="177.0" prefHeight="19.0" prefWidth="163.0" text="Title" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="33.0" layoutY="210.0" prefHeight="26.0" prefWidth="277.0" />
+                        <Label layoutX="30.0" layoutY="251.0" prefHeight="19.0" prefWidth="163.0" text="Description " textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextArea layoutX="50.0" layoutY="288.0" prefHeight="191.0" prefWidth="328.0" />
+                        <JFXButton layoutX="168.0" layoutY="523.0" prefHeight="26.0" prefWidth="91.0" styleClass="LogOutButton" text="Save" textFill="WHITE" />
+                        <JFXButton layoutX="327.0" layoutY="210.0" prefHeight="26.0" prefWidth="102.0" styleClass="LogOutButton" text="Change Image" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </JFXButton>
+                        <ChoiceBox layoutX="33.0" layoutY="140.0" prefHeight="26.0" prefWidth="194.0" />
+                        <Label layoutX="33.0" layoutY="107.0" prefHeight="19.0" prefWidth="163.0" text="Choose an element" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="871.0" layoutY="33.0" prefHeight="542.0" prefWidth="435.0" styleClass="Update_Page">
+                     <children>
+                        <Label layoutX="136.0" layoutY="14.0" text="Must see" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="111.0" prefHeight="19.0" prefWidth="163.0" text="Element 1" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="63.0" layoutY="144.0" prefHeight="26.0" prefWidth="209.0" />
+                        <TextField layoutX="63.0" layoutY="235.0" prefHeight="181.0" prefWidth="308.0" />
+                        <Label layoutX="63.0" layoutY="207.0" prefHeight="19.0" prefWidth="163.0" text="Description" textAlignment="CENTER" textFill="#f48c06">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="341.0" layoutY="144.0" styleClass="LogOutButton" />
+                        <JFXButton layoutX="172.0" layoutY="492.0" prefHeight="26.0" prefWidth="91.0" styleClass="LogOutButton" text="Save" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

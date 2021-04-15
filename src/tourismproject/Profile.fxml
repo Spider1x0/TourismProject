@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="currentPage" prefHeight="720.0" prefWidth="1600.0" styleClass="Background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tourismproject.ProfileController">
+   <left>
+      <VBox prefHeight="648.0" prefWidth="240.0" styleClass="NavBar" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="135.0" prefWidth="235.0">
+               <children>
+                  <ImageView fitHeight="118.0" fitWidth="132.0" layoutX="63.0" layoutY="14.0" onMouseClicked="#toProfile" pickOnBounds="true" preserveRatio="true" styleClass="ProfilePic">
+                     <image>
+                        <Image url="@../images/image-removebg-preview1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <GridPane prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="testLbl" alignment="CENTER" contentDisplay="BOTTOM" text="HOME" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="HOME" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="HOME" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="homeBtn" contentDisplay="CENTER" onAction="#toHome" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="CITY" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="CITIES" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="citiesBtn" onAction="#toCities" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="73.0" prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="DISCOVER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <OctIconView fill="#e85d04" glyphName="TELESCOPE" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="SIGHTSEEING" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="sightseeingBtn" onAction="#toSightseeing" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="THEATER" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ENTERTAINMENT" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="entertainment" onAction="#toEntertainment" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="73.0" prefWidth="235.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="193.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="ADMIN" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="HOME_MAP_MARKER" size="2em" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="EDIT HOME PAGE" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="adminBtn1" onAction="#toAdmin1" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <MaterialDesignIconView fill="#e85d04" glyphName="MAP_MARKER_PLUS" size="2em" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" text="EDIT PLACES" textFill="#fff8d6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="8.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton fx:id="adminBtn2" onAction="#toAdmin2" prefHeight="60.0" prefWidth="240.0" ripplerFill="#fff8d6" styleClass="NavButton" text=" " textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="75.0" prefWidth="235.0">
+               <children>
+                  <JFXButton fx:id="logOffBtn" layoutX="19.0" layoutY="18.0" onAction="#toLogin" prefHeight="50.0" prefWidth="201.0" ripplerFill="#f48c06" styleClass="LogOutButton" text="LOG OUT" textAlignment="CENTER" textFill="#fff8d6">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" stylesheets="@../css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="49.0" prefWidth="1360.0" styleClass="Header" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="648.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="680.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Rahal" textAlignment="CENTER" textFill="#f48c06">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="PROFILE" textAlignment="CENTER" textFill="#f48c06" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentTime" textAlignment="CENTER" textFill="#f48c06" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <Pane layoutX="580.0" layoutY="310.0" prefHeight="200.0" prefWidth="200.0" styleClass="ContentContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <GridPane prefHeight="237.0" prefWidth="830.0" styleClass="Recommendation">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="450.0" minWidth="10.0" prefWidth="315.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="592.0" minWidth="10.0" prefWidth="513.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="44.0" minHeight="44.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="97.0" minHeight="-Infinity" prefHeight="90.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="101.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="PROFILE" textAlignment="CENTER" textFill="#f48c06" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fx:id="profileImg" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                           <image>
+                              <Image url="@../images/image-removebg-preview.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Text fx:id="emailLbl" fill="#fff8d6" layoutX="283.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="usernameLbl" fill="#fff8d6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="fullnameLbl" fill="#fff8d6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" />
+                           </GridPane.margin>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="855.0" prefHeight="620.0" prefWidth="465.0" styleClass="News">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="70.0" minHeight="45.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="58.0" minHeight="58.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="EDIT ACCOUNT" textAlignment="CENTER" textFill="#f48c06" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <MaterialDesignIconView fill="#f48c06" glyphName="ACCOUNT" size="3em" GridPane.rowIndex="1" />
+                        <JFXTextField fx:id="usernameField" focusColor="#e85d04" labelFloat="true" promptText="USERNAME" styleClass="InputField" unFocusColor="#f48c06" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="30.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <MaterialDesignIconView fill="#f48c06" glyphName="ACCOUNT_KEY" size="3em" GridPane.rowIndex="2" />
+                        <JFXTextField fx:id="passwordField" focusColor="#e85d04" labelFloat="true" promptText="PASSWORD" styleClass="InputField" unFocusColor="#f48c06" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="30.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <MaterialDesignIconView fill="#f48c06" glyphName="EMAIL" size="3em" GridPane.rowIndex="3" />
+                        <JFXTextField fx:id="emailField" focusColor="#e85d04" labelFloat="true" promptText="EMAIL" styleClass="InputField" unFocusColor="#f48c06" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="30.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <MaterialDesignIconView fill="#f48c06" glyphName="ACCOUNT_CARD_DETAILS" size="3em" GridPane.rowIndex="4" />
+                        <JFXTextField fx:id="firstNameField" focusColor="#e85d04" labelFloat="true" promptText="FIRST NAME" styleClass="InputField" unFocusColor="#f48c06" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="30.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <MaterialDesignIconView fill="#f48c06" glyphName="ACCOUNT_CARD_DETAILS" size="3em" GridPane.rowIndex="5" />
+                        <JFXTextField fx:id="lastNameField" focusColor="#e85d04" labelFloat="true" promptText="LAST NAME" styleClass="InputField" unFocusColor="#f48c06" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" right="30.0" />
+                           </GridPane.margin>
+                        </JFXTextField>
+                        <JFXButton fx:id="saveAccountChangesBtn" onAction="#saveAccountChanges" prefHeight="42.0" prefWidth="383.0" ripplerFill="#780000" styleClass="RemoveFavBtn" text="SAVE CHANGES" textAlignment="CENTER" textFill="#fff8d6" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
+                        </JFXButton>
+                        <Label fx:id="changeErr" alignment="CENTER" prefHeight="28.0" prefWidth="334.0" styleClass="ErrorLbl" text="CORRECT ERRORS TO SAVE CHANGES" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="282.0" prefHeight="338.0" prefWidth="830.0" styleClass="Favourites">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="44.0" minHeight="44.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="58.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="146.0" minHeight="146.0" prefHeight="146.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.0" minHeight="45.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="190.0" styleClass="ImageBorder" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                           <GridPane.margin>
+                              <Insets top="17.0" />
+                           </GridPane.margin>
+                        </Pane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="190.0" styleClass="ImageBorder" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                           <GridPane.margin>
+                              <Insets top="17.0" />
+                           </GridPane.margin>
+                        </Pane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="190.0" styleClass="ImageBorder" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                           <GridPane.margin>
+                              <Insets top="17.0" />
+                           </GridPane.margin>
+                        </Pane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="190.0" styleClass="ImageBorder" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+                           <GridPane.margin>
+                              <Insets top="17.0" />
+                           </GridPane.margin>
+                        </Pane>
+                        <Label text="FAVOURITES" textAlignment="CENTER" textFill="#f48c06" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fx:id="favOneImg" fitHeight="100.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                        <Text fx:id="favOneTitle" fill="#fff8d6" layoutX="283.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="favTwoImg" fitHeight="100.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text fx:id="favTwoTitle" fill="#fff8d6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="favThreeImg" fitHeight="100.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Text fx:id="favThreeTitle" fill="#fff8d6" layoutX="283.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="favFourImg" fitHeight="100.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Text fx:id="favFourTitle" fill="#fff8d6" layoutX="283.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <MaterialDesignIconView fx:id="removeFavOne" fill="#f48c06" glyphName="BOOKMARK_REMOVE" onMouseClicked="#removeFav" size="4em" styleClass="Back" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" top="35.0" />
+                           </GridPane.margin>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fx:id="removeFavTwo" fill="#f48c06" glyphName="BOOKMARK_REMOVE" onMouseClicked="#removeFav" size="4em" styleClass="Back" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" top="35.0" />
+                           </GridPane.margin>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fx:id="removeFavThree" fill="#f48c06" glyphName="BOOKMARK_REMOVE" onMouseClicked="#removeFav" size="4em" styleClass="Back" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" top="35.0" />
+                           </GridPane.margin>
+                        </MaterialDesignIconView>
+                        <MaterialDesignIconView fx:id="removeFavFour" fill="#f48c06" glyphName="BOOKMARK_REMOVE" onMouseClicked="#removeFav" size="4em" styleClass="Back" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="20.0" top="35.0" />
+                           </GridPane.margin>
+                        </MaterialDesignIconView>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

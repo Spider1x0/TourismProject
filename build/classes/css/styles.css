@@ -1,0 +1,311 @@
+.Background {
+    -fx-background-image: url("/images/622055.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1600 720;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.LoginFormContainer, .RegisterFormContainer {
+    -fx-background-color:  rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 5px;
+}
+
+.RegisterHyperLink {
+    -fx-border-color:  transparent;
+}
+
+.InputField {
+    -fx-text-fill: #fff8d6;
+    -fx-prompt-text-fill: #f48c06;
+}
+
+.Btn {
+    -fx-border-color: #e85d04;
+    -fx-cursor: hand;
+}
+
+.ErrorLbl {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 10px;
+    -fx-opacity: 0;
+}
+
+/* Navigation bar CSS */
+
+.NavBar {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 35px 35px 0px;
+    -fx-border-radius: 0px 35px 35px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-width: 2px 2px 2px 0px;
+}
+
+.PageContainer {
+    -fx-background-color: #080f35;
+}
+
+.ProfilePic {
+    -fx-cursor: hand;
+    -fx-image: url("/images/image-removebg-preview1.png");
+}
+
+.ProfilePic:hover {
+    -fx-cursor: hand;
+    -fx-image: url("/images/image-removebg-preview2.png");
+}
+
+.NavButton {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+
+.jfx-button{
+    -jfx-disable-visual-focus: true;
+}
+
+.LogOutButton {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 10px 10px 35px 10px;
+    -fx-cursor: hand;
+}
+
+.Header {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 0px 150px 150px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 0px 150px 150px;
+    -fx-border-width: 0px 2px 2px 2px;
+}
+
+.ContentContainer {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 50px 50px 0px 0px;
+}
+
+.ImageContainer {
+    -fx-border-width: 2px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 10px;
+}
+
+.Recommendation, .Places {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 50px 0px 25px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 50px 0px 25px 0px;
+    -fx-border-width: 0px 2px 2px 0px;
+}
+
+.CurrentEvents, .Favourites {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 25px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 25px 0px 0px;
+    -fx-border-width: 2px 2px 0px 0px;
+}
+
+.News {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 50px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 50px 0px 0px;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+
+.RemoveFavBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-cursor: hand;
+}
+
+.CityOne {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 50px 0px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 50px 0px 0px 0px;
+    -fx-border-width: 2px 2px 0px 2px;
+}
+
+.CityTwo {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 50px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 50px 0px 0px;
+    -fx-border-width: 2px 2px 0px 1px;
+}
+
+.VisitBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 10px 10px 35px 35px;
+    -fx-cursor: hand;
+}
+
+.Back:hover, .Fav:hover {
+    -fx-cursor: hand;
+    -fx-fill: #e85d04;
+}
+
+.CatBtn:hover {
+    -fx-cursor: hand;
+}
+
+.ImageBorder {
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 12px 12px 0px 0px;
+    -fx-border-width: 2px 2px 0px 2px;
+}
+
+.CityDesc {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 50px 0px 25px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 50px 0px 25px;
+    -fx-border-width: 0px 0px 2px 2px;
+}
+
+.PlaceBorder {
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 50px 50px 0px 0px;
+    -fx-border-width: 2px 2px 0px 2px;
+}
+
+.ErrorContiner {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 15px 15px 15px 15px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 15px 15px 15px 15px;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+
+.scroll-pane > .viewport  { 
+    -fx-background-color: transparent; 
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #f48c06;
+    -fx-background-radius: 5em;
+}
+
+.ShuffleBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 0px 0px 0px 35px;
+    -fx-cursor: hand;
+}
+
+.combo-box-base {
+    -fx-background-color: rgba(3, 7, 30, 0.9), #e85d04, rgba(3, 7, 30, 0.9), rgba(3, 7, 30, 0.9);
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5px, 5px, 5px, 5px;
+    -fx-padding: 0.33333em 0.66666em 0.33333em 0.66666em; /* 4 8 4 8 */
+    -fx-text-fill: #fff8d6;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.combo-box-popup .list-view 
+{
+    -fx-background-color: rgba(3, 7, 30, 0.9), rgba(3, 7, 30, 0.9);
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}   
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff8d6;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: 0 0 0 5;
+    -fx-background-color: rgb(3, 7, 30);
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: #e85d04;
+    -fx-text-fill: #fff8d6;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #f48c06;
+    -fx-text-fill: #fff8d6;
+}
+
+.RecSaveBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 0px 0px 0px 35px;
+    -fx-cursor: hand;
+}
+
+.ChosePicEvents {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 0px 10px 35px 0px;
+    -fx-cursor: hand;
+}
+
+.EventsSaveBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 0px 23px 0px 35px;
+    -fx-cursor: hand;
+}
+
+.NewsSaveBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 0px 0px 35px 0px;
+    -fx-cursor: hand;
+}
+
+.EditCities {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 50px 50px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 50px 50px 0px 0px;
+    -fx-border-width: 2px 2px 0px 2px;
+}
+
+.EditPlaces {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 50px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 50px 0px 0px;
+    -fx-border-width: 2px 2px 0px 0px;
+}
+
+.EditMustSee {
+    -fx-background-color: rgba(3, 7, 30, 0.9);
+    -fx-background-radius: 0px 50px 0px 0px;
+    -fx-border-color: #e85d04;
+    -fx-border-radius: 0px 50px 0px 0px;
+    -fx-border-width: 2px 2px 0px 0px;
+}
+
+.SaveBtn {
+    -fx-background-color: #e85d04;
+    -fx-background-radius: 35px 35px 0px 0px;
+    -fx-cursor: hand;
+}
